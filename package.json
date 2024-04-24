@@ -1,0 +1,24 @@
+{
+  "name": "owlservice",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "biome lint ./src",
+    "lint:check": "biome check --apply ./src",
+    "format": "biome format ./src",
+    "format:write": "biome format --write ./src"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "astro": "^4.6.3",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1"
+  }
+}

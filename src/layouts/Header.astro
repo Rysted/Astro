@@ -1,0 +1,35 @@
+<header class="header">
+  <h1>Hello World</h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Inicio</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--HeaderBackgroundColor);
+    color: var(--HeaderTextColor);
+  }
+
+  .header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+  }
+
+  .header a {
+    text-decoration: none;
+    color: var(--HeaderTextColor);
+  }
+</style>
