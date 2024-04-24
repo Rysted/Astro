@@ -1,12 +1,20 @@
+---
+import { getLangFromUrl } from "@/utils/i18n";
+
+const { currentLocale } = Astro;
+
+const lang = getLangFromUrl(currentLocale);
+---
+
 <header class="header">
   <h1>Hello World</h1>
   <nav>
     <ul>
       <li>
-        <a href="/">Inicio</a>
+        <a href=`${lang}`>Inicio</a>
       </li>
       <li>
-        <a href="/about">About</a>
+        <a href=`${lang}about`>About</a>
       </li>
     </ul>
   </nav>

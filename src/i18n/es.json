@@ -2,7 +2,8 @@
   "SEO_TITLE": "Bienvenido a Owl Services",
   "SEO_DESCRIPTION": "Esta es una descripción",
   "APP": {
-    "INTRO_TITLE": "Hola soy APP"
+    "INTRO_TITLE": "Hola soy APP",
+    "BUTTONSLANGUAGES": ["Español", "Ingles"]
   },
   "ABOUT": {
     "INTRO_TITLE": "Hola soy ABOUT"

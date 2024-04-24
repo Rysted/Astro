@@ -1,27 +1,12 @@
-<script>
-  const buttons = document.getElementsByTagName("button");
-  const buttonsArray = Array.from(buttons);
-
-  buttonsArray.forEach((btn: any) => {
-    btn.addEventListener("click", () => {
-      if (btn.innerHTML === "ES") {
-        return languageES();
-      }
-      return languageEN();
-    });
-  });
-
-  function languageES() {
-    return Astro.redirect("/es");
-  }
-
-  function languageEN() {
-    return Astro.redirect("/");
-  }
-</script>
+---
+const { languages } = Astro.props;
+---
 
 <div>
   <slot />
-  <button>ES</button>
-  <button>EN</button>
+  {
+    languages.map((lang: string) => {
+      return <button>{lang}</button>;
+    })
+  }
 </div>
